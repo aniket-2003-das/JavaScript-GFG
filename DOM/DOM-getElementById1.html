@@ -1,0 +1,22 @@
+<!-- element_id is used to change the content on clicking the button. -->
+<html>
+<head>
+    <title>DOM getElementById() Method</title>
+    <script>
+        // Function to change content of element
+        function geeks() {
+            var demo = document.getElementById("geeks");
+            demo.innerHTML = "Welcome to GeeksforGeeks!";
+        }
+    </script>
+</head>
+<body style="text-align:center">
+    <h1>GeeksforGeeks</h1>
+    <h2>DOM getElementById() Method</h2>
+    <h3 id="geeks">Hello Geeks!</h3>
+    <!-- Click here to change content -->
+    <input type="button" 
+           onclick="geeks()" 
+           value="Click here to change content" />
+</body>
+</html>

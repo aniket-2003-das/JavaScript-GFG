@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM querySelectorAll() Method</title>
+        <style>
+            #geek {
+              border: 1px solid black;
+              margin: 5px;
+            }
+        </style>
+    </head>
+    <body style = "text-align: center;">
+        <h1 style = "color: green;">GeeksforGeeks</h1>
+        <h2>querySelectorAll() Method</h2>
+        <div id="geek">  
+<p>This is paragraph 1.</p> 
+<p>This is paragraph 2.</p>
+        </div>
+        <button onclick="myFunction()">Try it</button>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("geek").querySelectorAll("p");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "green";
+                x[i].style.color = "white";
+                }
+            }
+        </script>
+    </body>
+</html>
+
