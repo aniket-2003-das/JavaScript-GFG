@@ -1,0 +1,29 @@
+<!-- addEventListener(type, listener, useCapture) -->
+<!-- enent bubbling child event occurs first then followed by parent event. -->
+
+<!DOCTYPE html>
+<html>
+<head><title>Bubbling Event</title></head>
+<body>
+    <h2>Bubbling Event</h2>
+
+    <div id="parent">
+        <button>
+            <h2>Parent</h2>
+        </button>
+        <button id="child">
+            <p>Child</p>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById("child").addEventListener("click", function () {
+            alert("You clicked the Child element!");
+        }, false);
+ 
+        document.getElementById("parent").addEventListener("click", function () {
+            alert("You clicked the parent element!");
+        }, false);
+    </script>
+</body>
+</html>
